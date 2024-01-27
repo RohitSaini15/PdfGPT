@@ -47,7 +47,7 @@ export const appRouter = router({
         }
       })
 
-      if(!file) return new TRPCError({code: 'NOT_FOUND'})
+      // if(!file) return new TRPCError({code: 'NOT_FOUND'})
       return file
   }),
   // Post request input

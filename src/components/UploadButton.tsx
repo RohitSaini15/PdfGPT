@@ -23,7 +23,7 @@ const UploadDropzone = () => {
     const {mutate: startPolling} = trpc.getFile.useMutation({
       onSuccess: (file) => {
         console.log(file)
-        router.push(`/dashboard/${file.id}}`)
+        router.push(`/dashboard/${file?.id}}`)
       },
       retry: true,
       retryDelay: 500
