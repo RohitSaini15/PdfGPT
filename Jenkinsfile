@@ -5,7 +5,7 @@ pipeline{
     }
     stages{
         stage("update docker image"){
-            step{
+            steps{
                 sh "docker build . -t ithro/pdf-gpt"
             }
         }
