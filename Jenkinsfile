@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("update docker image"){
             steps{
-                sh "docker build . -t ithro/pdf-gpt"
+                sh "docker build . -t ithro/pdf-gpt:${BUILD_NUMBER}"
             }
         }
     }
