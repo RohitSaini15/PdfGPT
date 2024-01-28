@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    env{
+    environment{
         DOCKER_CRED = credentials("docker-cred")
     }
     stages{
